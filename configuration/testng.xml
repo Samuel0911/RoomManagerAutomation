@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="Test Suite">
+
+  <listeners>
+      <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+      <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+  </listeners>
+  
+   <test name="Sample test">
+    <classes>
+      
+      <class name="org.roommanager.test.login.Login" />      
+    
+    </classes>
+    
+  </test>
+  
+</suite>

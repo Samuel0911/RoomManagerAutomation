@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Create Location test"
+           tests="1"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="38.753">
+  <properties />
+  
+  
+            <testcase name="createLocation" time="38.753" classname="org.roommanager.test.admin.locations.CreateLocations" />
+      
+</testsuite>

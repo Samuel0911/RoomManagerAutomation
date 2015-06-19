@@ -19,7 +19,7 @@ public class RoomInfoPage {
 	String roomNameUpdated = "SM-Room Updated";
 	String codeRoom = "30";
 	String capacityRoom = "50";
-	String nameOfRoomOriginal = "SM-Room10";
+	String nameOfRoomOriginal = "SM-Room11";
 	
 	By nameOfRoom = ConfRoomInfoModel.NAME_OF_ROOM.value;
 	By codeOfRoom = ConfRoomInfoModel.CODE_OF_ROOM.value;

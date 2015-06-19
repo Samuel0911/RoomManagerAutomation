@@ -52,8 +52,8 @@ public class UpdateRoom {
 		//confRoom.searchText();		
 				
 		//assertEquals(nameRoomAssert, driver.findElement(By.xpath("//div[@id='roomsGrid']/div[2]/div/div/div[3]/div[2]/div/span[2]")).getText());
-		System.out.println("asdasdas "+nameRoomAssert+ roomInfo.getRoomName(nameRoomAssert));
-		Assert.assertEquals(nameRoomAssert, roomInfo.getRoomName(nameRoomAssert));
+		System.out.println("asdasdas "+nameRoomAssert+ roomInfo.getRoomName(nameRoomAssert));		
+		Assert.assertEquals(nameRoomAssert, roomInfo.getRoomName(nameRoomAssert).trim());
 	     
 	}	
 

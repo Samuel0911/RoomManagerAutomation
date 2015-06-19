@@ -6,10 +6,9 @@ import java.io.InputStream;
 import java.util.Properties;
  
 public class PropertyReader {
-	Properties prop = new Properties();
-	InputStream input = null;
-	
-	public PropertyReader(){
+	private static Properties prop = new Properties();
+	private static InputStream input = null;	
+	private static Properties getPropertyReader(){
 	 try {		 
 		input = new FileInputStream("configuration\\roommanager.properties");
  
@@ -27,17 +26,23 @@ public class PropertyReader {
 				}
 			}
 		}
+	 return prop;
+	 
 	 }	
 	
-	public String getUrl(){
-		return prop.getProperty("url");
+	public static String getUrl(){
+		return getPropertyReader().getProperty("url");
 	}
 	
-	public String getUserName(){
-		return prop.getProperty("username");
+	public static String getUserName(){
+		return getPropertyReader().getProperty("username");
 	}
 	
-	public String getPassword(){
-		return prop.getProperty("password");
+	public static String getPassword(){
+		return getPropertyReader().getProperty("password");
+	}
+	
+	public static String getChromeDriver(){
+		return getPropertyReader().getProperty("chromedriver");
 	}
 }

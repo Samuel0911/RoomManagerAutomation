@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="Test Suite for Room Manager" parallel = "false">
+
+  <listeners>
+      <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+      <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+      <listener class-name="org.roommanager.utils.FailedScreenShot"/>
+  </listeners>
+  
+   <test name="Login test">
+    <classes>      
+      <class name="org.roommanager.test.admin.login.Login" />          
+    </classes>    
+  </test>
+  
+  <test name="Create Location test">
+    <classes>      
+      <class name="org.roommanager.test.admin.locations.CreateLocations" />          
+    </classes>    
+  </test>
+  
+  <test name="Delete Location test">
+    <classes>      
+      <class name="org.roommanager.test.admin.locations.DeleteLocation" />          
+    </classes>    
+  </test>
+  
+    <test name="Update Location test">
+    <classes>      
+      <class name="org.roommanager.test.admin.locations.UpdateLocation" />          
+    </classes>    
+  </test>
+  
+</suite>

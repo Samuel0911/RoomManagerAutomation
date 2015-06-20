@@ -20,8 +20,6 @@ public class LoginPage {
 	By passTextFiel = LoginModel.PASS_TEXT_FIELD.value;
 	By sigInButton = LoginModel.SIGN_IN_BUTTON.value;
 
-	
-
 	public LoginPage(WebDriver driver){
 		this.driver = driver;
 	}

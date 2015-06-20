@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="org.roommanager.test.admin.confRoom.UpdateRoom">
+      <class name="org.roommanager.test.admin.resources.DeleteResource">
         <methods>
-          <include name="tearDown"/>
-          <include name="testUpdateRooms"/>
+          <include name="deleteResource"/>
           <include name="setUp"/>
+          <include name="setUpTest"/>
         </methods>
-      </class> <!-- org.roommanager.test.admin.confRoom.UpdateRoom -->
+      </class> <!-- org.roommanager.test.admin.resources.DeleteResource -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

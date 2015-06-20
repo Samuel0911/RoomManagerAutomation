@@ -7,6 +7,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.roommanager.pageModel.admin.modelMainMenu.MainMenuModel;
 import org.roommanager.pages.admin.confRoom.ConfRoomPage;
 import org.roommanager.pages.admin.locations.LocationsPage;
+import org.roommanager.pages.admin.resources.ResourcePage;
 
 public class MainMenuPage {	
 	
@@ -39,10 +40,11 @@ WebDriver driver;
 		
 	}
 	
-	public void ResourcesHyperLink(){
+	public ResourcePage ResourcesHyperLink(){
 		(new WebDriverWait(driver, 60))
 	    .until(ExpectedConditions.presenceOfElementLocated(linkResourceMenu));
 		driver.findElement(linkResourceMenu).click();
+		return new ResourcePage(driver);
 	}
     
 	public LocationsPage LocationsHyperLink(){

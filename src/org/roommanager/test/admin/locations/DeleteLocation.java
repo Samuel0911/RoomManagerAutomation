@@ -31,11 +31,11 @@ public class DeleteLocation {
 	  }
 	 @BeforeTest
 	  public void setUpTest(){
-		  baseUrl = PropertyReader.getUrl();
-		    driver.get(baseUrl);	    
-	    	LoginPage login = new LoginPage(driver);	    
-	    	login.setUsername(PropertyReader.getUserName());	    
-		    login.setPassword(PropertyReader.getPassword());	    
+		baseUrl = PropertyReader.getUrl();
+		driver.get(baseUrl);	    
+		LoginPage login = new LoginPage(driver);	    
+		login.setUsername(PropertyReader.getUserName());	    
+		login.setPassword(PropertyReader.getPassword());	    
 		   
 		    MainMenuPage menu = login.clickSignInButton();	    
 		   

@@ -1457,3 +1457,63 @@
 2015-06-19 21:30:53,804 [main] INFO org.roommanager.utils.LogsMessages - Click on Conference Room hyperlink
 2015-06-19 21:30:54,169 [main] INFO org.roommanager.utils.LogsMessages - Double Click on Conference Room Name
 2015-06-19 21:30:54,661 [main] INFO org.roommanager.utils.LogsMessages - Click on save button
+2015-06-19 22:11:30,270 [main] INFO org.roommanager.utils.LogsMessages - Writting the User Name
+2015-06-19 22:11:30,572 [main] INFO org.roommanager.utils.LogsMessages - Writting the Password
+2015-06-19 22:11:30,668 [main] INFO org.roommanager.utils.LogsMessages - Clicking in the Sign In Button
+2015-06-19 22:11:31,587 [main] INFO org.roommanager.utils.LogsMessages - Click on the Link Location of the main menu
+2015-06-19 22:11:32,317 [main] INFO org.roommanager.utils.LogsMessages - Click on the Add button of the page Location
+2015-06-19 22:11:35,845 [main] INFO org.roommanager.utils.LogsMessages - Updating the page
+2015-06-19 22:11:35,973 [main] INFO org.roommanager.utils.LogsMessages - Searching for the last location created
+2015-06-19 22:11:36,757 [main] INFO org.roommanager.utils.LogsMessages - Clicking in the Sign In Button
+2015-06-19 22:11:38,149 [main] INFO org.roommanager.utils.LogsMessages - Searching for the last location created
+2015-06-19 22:11:38,296 [main] INFO org.roommanager.utils.LogsMessages - Clicking on the last location created
+2015-06-19 22:11:38,405 [main] INFO org.roommanager.utils.LogsMessages - Click on remove button of the Location page
+2015-06-19 22:11:41,391 [main] INFO org.roommanager.utils.LogsMessages - Writting the User Name
+2015-06-19 22:11:41,643 [main] INFO org.roommanager.utils.LogsMessages - Writting the Password
+2015-06-19 22:11:41,784 [main] INFO org.roommanager.utils.LogsMessages - Clicking in the Sign In Button
+2015-06-19 22:11:42,679 [main] INFO org.roommanager.utils.LogsMessages - Click on the Link Location of the main menu
+2015-06-19 22:11:42,900 [main] INFO org.roommanager.utils.LogsMessages - Click on the Add button of the page Location
+2015-06-19 22:11:44,235 [main] INFO org.roommanager.utils.LogsMessages - Writting the User Name
+2015-06-19 22:11:44,452 [main] INFO org.roommanager.utils.LogsMessages - Writting the Password
+2015-06-19 22:11:44,570 [main] INFO org.roommanager.utils.LogsMessages - Clicking in the Sign In Button
+2015-06-19 22:11:45,877 [main] INFO org.roommanager.utils.LogsMessages - Click on the Link Location of the main menu
+2015-06-19 22:11:46,076 [main] INFO org.roommanager.utils.LogsMessages - Click on the Add button of the page Location
+2015-06-19 22:11:50,166 [main] INFO org.roommanager.utils.LogsMessages - Updating the page
+2015-06-19 22:11:51,053 [main] INFO org.roommanager.utils.LogsMessages - Writting the User Name
+2015-06-19 22:11:51,194 [main] INFO org.roommanager.utils.LogsMessages - Writting the Password
+2015-06-19 22:11:51,300 [main] INFO org.roommanager.utils.LogsMessages - Clicking in the Sign In Button
+2015-06-19 22:11:51,406 [main] INFO org.roommanager.utils.LogsMessages - Clicking in the Sign In Button
+2015-06-19 22:11:53,544 [main] INFO org.roommanager.utils.LogsMessages - Click on the Link Location of the main menu
+2015-06-19 22:11:53,715 [main] INFO org.roommanager.utils.LogsMessages - Searching for the last location created
+2015-06-19 22:11:53,881 [main] INFO org.roommanager.utils.LogsMessages - Clicking on the last location created
+2015-06-19 22:11:54,061 [main] INFO org.roommanager.utils.LogsMessages - Clicking on the last location created
+2015-06-19 22:11:56,973 [main] INFO org.roommanager.utils.LogsMessages - Updating the page
+2015-06-19 22:11:57,069 [main] INFO org.roommanager.utils.LogsMessages - Searching for the last location created
+2015-06-19 22:17:05,980 [main] INFO org.roommanager.utils.LogsMessages - Clicking in the Sign In Button
+2015-06-19 22:17:07,753 [main] INFO org.roommanager.utils.LogsMessages - Searching for the last location created
+2015-06-19 22:17:08,004 [main] INFO org.roommanager.utils.LogsMessages - Clicking on the last location created
+2015-06-19 22:17:08,201 [main] INFO org.roommanager.utils.LogsMessages - Click on remove button of the Location page
+2015-06-19 22:17:10,782 [main] INFO org.roommanager.utils.LogsMessages - Writting the User Name
+2015-06-19 22:17:10,973 [main] INFO org.roommanager.utils.LogsMessages - Writting the Password
+2015-06-19 22:17:11,066 [main] INFO org.roommanager.utils.LogsMessages - Clicking in the Sign In Button
+2015-06-19 22:17:12,644 [main] INFO org.roommanager.utils.LogsMessages - Click on the Link Location of the main menu
+2015-06-19 22:17:12,787 [main] INFO org.roommanager.utils.LogsMessages - Click on the Add button of the page Location
+2015-06-19 22:17:16,599 [main] INFO org.roommanager.utils.LogsMessages - Updating the page
+2015-06-19 22:17:16,793 [main] INFO org.roommanager.utils.LogsMessages - Searching for the last location created
+2015-06-19 22:17:17,022 [main] INFO org.roommanager.utils.LogsMessages - Clicking on the last location created
+2015-06-19 22:17:17,147 [main] INFO org.roommanager.utils.LogsMessages - Click on remove button of the Location page
+2015-06-19 22:17:19,483 [main] INFO org.roommanager.utils.LogsMessages - Updating the page
+2015-06-19 22:19:47,147 [main] INFO org.roommanager.utils.LogsMessages - Clicking in the Sign In Button
+2015-06-19 22:19:48,215 [main] INFO org.roommanager.utils.LogsMessages - Searching for the last location created
+2015-06-19 22:19:49,163 [main] INFO org.roommanager.utils.LogsMessages - Clicking on the last location created
+2015-06-19 22:19:49,292 [main] INFO org.roommanager.utils.LogsMessages - Click on remove button of the Location page
+2015-06-19 22:19:51,710 [main] INFO org.roommanager.utils.LogsMessages - Writting the User Name
+2015-06-19 22:19:51,888 [main] INFO org.roommanager.utils.LogsMessages - Writting the Password
+2015-06-19 22:19:51,983 [main] INFO org.roommanager.utils.LogsMessages - Clicking in the Sign In Button
+2015-06-19 22:19:53,469 [main] INFO org.roommanager.utils.LogsMessages - Click on the Link Location of the main menu
+2015-06-19 22:19:53,619 [main] INFO org.roommanager.utils.LogsMessages - Click on the Add button of the page Location
+2015-06-19 22:19:58,028 [main] INFO org.roommanager.utils.LogsMessages - Updating the page
+2015-06-19 22:19:58,145 [main] INFO org.roommanager.utils.LogsMessages - Searching for the last location created
+2015-06-19 22:19:58,280 [main] INFO org.roommanager.utils.LogsMessages - Clicking on the last location created
+2015-06-19 22:19:58,487 [main] INFO org.roommanager.utils.LogsMessages - Click on remove button of the Location page
+2015-06-19 22:20:00,511 [main] INFO org.roommanager.utils.LogsMessages - Updating the page

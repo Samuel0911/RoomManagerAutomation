@@ -22,11 +22,10 @@ public class FailedScreenShot extends TestListenerAdapter {
 
 	@Override
 	public void onTestFailure(ITestResult tr) {
-		//tr.getTestName();
-		takeScreenShot();
+		takeScreenShot(tr.getName());
 	}
 
-	private void takeScreenShot() {
+	private void takeScreenShot(String testName) {
 	try {
 
 	String NewFileNamePath;
@@ -40,9 +39,7 @@ public class FailedScreenShot extends TestListenerAdapter {
 	DateFormat dateFormat = new SimpleDateFormat("dd_MMM_yyyy__hh_mm_ssaa");
 	Date date = new Date();
 
-	InetAddress ownIP=InetAddress.getLocalHost();
-
-	NewFileNamePath = directory.getCanonicalPath()+ "\\screenshots\\"+ dateFormat.format(date)+"_"+ownIP.getHostAddress()+ ".png";
+	NewFileNamePath = directory.getCanonicalPath()+ "\\screenshots\\"+ testName + "_" + dateFormat.format(date)+".png";
 	
 	Robot robot = new Robot();
 	BufferedImage bi=robot.createScreenCapture(new Rectangle(scrnsize));

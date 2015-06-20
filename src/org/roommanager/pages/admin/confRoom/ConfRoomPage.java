@@ -1,10 +1,7 @@
 package org.roommanager.pages.admin.confRoom;
 
-import java.util.List;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -22,7 +19,6 @@ public class ConfRoomPage {
 	
 	By linkConfRoomMenu = ConfRoomModel.LINK_CONFROOM_MENU.value;
 	By doubleClickRoom = ConfRoomModel.DOUBLE_CLICK_ROOM.value; 
-	By searchText = ConfRoomModel.SEARCH_TEXT.value;
 	
 	public ConfRoomPage confRoomHyperLink(){
 		(new WebDriverWait(driver, 60))
@@ -41,12 +37,4 @@ public class ConfRoomPage {
 		LogsMessages.info("Double Click on Conference Room Name");
 		return new RoomInfoPage(driver);
 	}
-	
-	/*public void searchText(){
-		(new WebDriverWait(driver, 60))
-	    .until(ExpectedConditions.presenceOfElementLocated(searchText));
-		driver.findElement(searchText).clear();
-		driver.findElement(searchText).sendKeys(nameRoom);
-	}
-	*/
 }

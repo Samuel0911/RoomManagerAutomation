@@ -1,15 +1,14 @@
 package org.roommanager.pages.admin.confRoom;
 
-import static org.junit.Assert.assertEquals;
-
 import java.util.List;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.roommanager.pageModel.admin.modelConfRoom.ConfRoomInfoModel;
+import org.roommanager.pageModel.admin.modelConfRoom.ConfRoomModel;
+import org.roommanager.utils.LogsMessages;
 
 public class RoomInfoPage {
 	
@@ -26,6 +25,9 @@ public class RoomInfoPage {
 	By capacityOfRoom = ConfRoomInfoModel.CAPACITY_OF_ROOM.value;
 	By saveButton = ConfRoomInfoModel.SAVE_BUTTON_OF_ROOM.value;
 	By assertRoomUpdating = ConfRoomInfoModel.ASSERT_ROOM_UPDATE.value;
+	By getFormPadre = ConfRoomModel.GET_FORM_PADRE.value;
+	By getElementsHijo = ConfRoomModel.GET_ELEMENTS_HIJOS.value;
+	By getHijo = ConfRoomModel.GET_HIJO.value;
 	
 	
 	public RoomInfoPage(WebDriver driver){
@@ -36,7 +38,6 @@ public class RoomInfoPage {
 
 		WebElement textNameField = (new WebDriverWait(driver, 60))
 	    .until(ExpectedConditions.presenceOfElementLocated(nameOfRoom));
-		String originalText = textNameField.getText();
 		textNameField.clear();		
 		textNameField.sendKeys(roomNameUpdated);
 		return this;
@@ -56,6 +57,7 @@ public class RoomInfoPage {
 	    .until(ExpectedConditions.presenceOfElementLocated(codeOfRoom));
 		driver.findElement(codeOfRoom).clear();
 		driver.findElement(codeOfRoom).sendKeys(codeRoom);
+		LogsMessages.info("Write a code for a room");
 		return this;
 	}
 	
@@ -64,6 +66,7 @@ public class RoomInfoPage {
 	    .until(ExpectedConditions.presenceOfElementLocated(capacityOfRoom));
 		driver.findElement(capacityOfRoom).clear();
 		driver.findElement(capacityOfRoom).sendKeys(capacityRoom); 
+		LogsMessages.info("Write a capacity for a room");
 		return this;
 	}
 	
@@ -71,6 +74,7 @@ public class RoomInfoPage {
 		(new WebDriverWait(driver, 60))
 	    .until(ExpectedConditions.presenceOfElementLocated(saveButton));
 		driver.findElement(saveButton).click();
+		LogsMessages.info("Click on save button");
 		return new ConfRoomPage(driver);
 	}
 	
@@ -87,13 +91,12 @@ public class RoomInfoPage {
 	
 	public WebElement buscador(String name){
 		(new WebDriverWait(driver, 60))
-	    	.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@id='roomsGrid']/div[2]/div")));
-        WebElement padre = driver.findElement(By.xpath("//div[@id='roomsGrid']/div[2]/div"));
-        List<WebElement> hijos = padre.findElements(By.xpath("div"));
+	    	.until(ExpectedConditions.presenceOfElementLocated(getFormPadre));
+        WebElement padre = driver.findElement(getFormPadre);
+        List<WebElement> hijos = padre.findElements(getHijo);
         
         for (WebElement roomHijo : hijos) {
-			String roomName = roomHijo.findElement(By.xpath("div[3]/div[2]/div/span[2]")).getText();
-			System.out.println("este es el room name choy "+ roomName);
+			String roomName = roomHijo.findElement(getElementsHijo).getText();
 			if(roomName.equals(name)){
 				return roomHijo;
 			}

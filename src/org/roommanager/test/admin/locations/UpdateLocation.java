@@ -1,8 +1,6 @@
 package org.roommanager.test.admin.locations;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.interactions.Actions;
 import org.roommanager.pages.admin.locations.AddLocationPage;
 import org.roommanager.pages.admin.locations.LocationsPage;
 import org.roommanager.pages.admin.locations.RemoveLocationPage;
@@ -24,13 +22,9 @@ public class UpdateLocation {
 	String displayNameLocation = "Location";
 
 
-	@BeforeSuite
-	public void setUp() throws Exception {
-
-		driver = BrowserManager.browserChrome();
-	}
 	@BeforeTest
 	public void setUpTest(){
+		driver = BrowserManager.browserChrome();
 		baseUrl = PropertyReader.getUrl();
 		driver.get(baseUrl);	    
 		LoginPage login = new LoginPage(driver);	    
@@ -85,7 +79,7 @@ public class UpdateLocation {
 
 	@AfterTest
 	public void TearDownTest(){
-		driver.get(baseUrl);
+
 		LoginPage login = new LoginPage(driver);
 
 		MainMenuPage menu = login.clickSignInButton();	    
@@ -100,9 +94,6 @@ public class UpdateLocation {
 
 		location = removeLocation
 				.removeLocationButton();
-		
+		driver.get(baseUrl);
 	}
-
-
-
 }

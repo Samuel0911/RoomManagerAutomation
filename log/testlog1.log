@@ -1435,3 +1435,25 @@
 2015-06-19 19:15:49,615 [main] INFO org.roommanager.utils.LogsMessages - Clicking in the Sign In Button
 2015-06-19 19:15:51,422 [main] INFO org.roommanager.utils.LogsMessages - Click on Conference Room hyperlink
 2015-06-19 19:15:51,575 [main] INFO org.roommanager.utils.LogsMessages - Double Click on Conference Room Name
+2015-06-19 21:29:40,604 [main] INFO org.roommanager.utils.LogsMessages - Writting the User Name
+2015-06-19 21:29:40,853 [main] INFO org.roommanager.utils.LogsMessages - Writting the Password
+2015-06-19 21:29:40,951 [main] INFO org.roommanager.utils.LogsMessages - Clicking in the Sign In Button
+2015-06-19 21:29:41,815 [main] INFO org.roommanager.utils.LogsMessages - Click on Conference Room hyperlink
+2015-06-19 21:29:43,475 [main] INFO org.roommanager.utils.LogsMessages - Double Click on Conference Room Name
+2015-06-19 21:29:44,809 [main] INFO org.roommanager.utils.LogsMessages - Write a code for a room
+2015-06-19 21:29:45,047 [main] INFO org.roommanager.utils.LogsMessages - Write a capacity for a room
+2015-06-19 21:29:45,162 [main] INFO org.roommanager.utils.LogsMessages - Click on save button
+2015-06-19 21:30:45,285 [main] INFO org.roommanager.utils.LogsMessages - Writting the User Name
+2015-06-19 21:30:45,573 [main] INFO org.roommanager.utils.LogsMessages - Writting the Password
+2015-06-19 21:30:45,676 [main] INFO org.roommanager.utils.LogsMessages - Clicking in the Sign In Button
+2015-06-19 21:30:46,618 [main] INFO org.roommanager.utils.LogsMessages - Click on Conference Room hyperlink
+2015-06-19 21:30:48,515 [main] INFO org.roommanager.utils.LogsMessages - Double Click on Conference Room Name
+2015-06-19 21:30:49,904 [main] INFO org.roommanager.utils.LogsMessages - Write a code for a room
+2015-06-19 21:30:50,103 [main] INFO org.roommanager.utils.LogsMessages - Write a capacity for a room
+2015-06-19 21:30:50,406 [main] INFO org.roommanager.utils.LogsMessages - Click on save button
+2015-06-19 21:30:51,433 [main] INFO org.roommanager.utils.LogsMessages - Writting the User Name
+2015-06-19 21:30:51,674 [main] INFO org.roommanager.utils.LogsMessages - Writting the Password
+2015-06-19 21:30:51,774 [main] INFO org.roommanager.utils.LogsMessages - Clicking in the Sign In Button
+2015-06-19 21:30:53,804 [main] INFO org.roommanager.utils.LogsMessages - Click on Conference Room hyperlink
+2015-06-19 21:30:54,169 [main] INFO org.roommanager.utils.LogsMessages - Double Click on Conference Room Name
+2015-06-19 21:30:54,661 [main] INFO org.roommanager.utils.LogsMessages - Click on save button

@@ -8,25 +8,20 @@
       <listener class-name="org.roommanager.utils.FailedScreenShot"/>
   </listeners>
   
-   <test name="Login test">
-    <classes>      
-      <class name="org.roommanager.test.admin.login.Login" />          
-    </classes>    
-  </test>
   
-  <test name="Create Location test">
+  <test name="Verify that is possible create a location">
     <classes>      
       <class name="org.roommanager.test.admin.locations.CreateLocations" />          
     </classes>    
   </test>
   
-  <test name="Delete Location test">
+  <test name="Verify that is posible delete a location">
     <classes>      
       <class name="org.roommanager.test.admin.locations.DeleteLocation" />          
     </classes>    
   </test>
   
-    <test name="Update Location test">
+    <test name="Verify that is possible update a location">
     <classes>      
       <class name="org.roommanager.test.admin.locations.UpdateLocation" />          
     </classes>    

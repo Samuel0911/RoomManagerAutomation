@@ -78,7 +78,6 @@ public class CreateLocations {
 				.removeLocationButton();
 	}
 
-
 	@AfterSuite
 	public void tearDown() throws Exception {				
 		driver.quit();	    

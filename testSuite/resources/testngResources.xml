@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="Test Suite for Room Manager" parallel = "false">
+
+  <listeners>
+      <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+      <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+      <listener class-name="org.roommanager.utils.FailedScreenShot"/>
+  </listeners>
+
+  
+  <test name="Verify that is possible create a new resource">
+    <classes>      
+      <class name="org.roommanager.test.admin.resources.CreateResource" />          
+    </classes>    
+  </test>
+  
+  <test name="Verify that is possible delete a resource">
+    <classes>      
+      <class name="org.roommanager.test.admin.resources.DeleteResource" />          
+    </classes>    
+  </test>
+  
+</suite>

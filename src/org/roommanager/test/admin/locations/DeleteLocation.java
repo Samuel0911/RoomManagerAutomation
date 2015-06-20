@@ -12,11 +12,8 @@ import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
-
-@Listeners(org.roommanager.utils.FailedScreenShot.class)
 public class DeleteLocation {
 	  private WebDriver driver;
 	  private static String baseUrl;
@@ -69,7 +66,7 @@ public class DeleteLocation {
 	 
 	 @AfterTest
 	 public void TearDownTest(){
-		 
+		 driver.quit();	   
 	 }
 
 }

@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="19654" started-at="2015-06-19T23:15:34Z" finished-at="2015-06-19T23:15:53Z">
+  <suite name="Default suite" duration-ms="19661" started-at="2015-06-20T01:30:36Z" finished-at="2015-06-20T01:30:55Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="19654" started-at="2015-06-19T23:15:34Z" finished-at="2015-06-19T23:15:53Z">
+    <test name="Default test" duration-ms="19661" started-at="2015-06-20T01:30:36Z" finished-at="2015-06-20T01:30:55Z">
       <class name="org.roommanager.test.admin.confRoom.UpdateRoom">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:org.roommanager.test.admin.confRoom.UpdateRoom@4bc5764e]" name="setUp" is-config="true" duration-ms="4453" started-at="2015-06-19T19:15:34Z" finished-at="2015-06-19T19:15:38Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:org.roommanager.test.admin.confRoom.UpdateRoom@316db8d6]" name="setUp" is-config="true" duration-ms="7948" started-at="2015-06-19T21:30:36Z" finished-at="2015-06-19T21:30:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testUpdateRooms()[pri:0, instance:org.roommanager.test.admin.confRoom.UpdateRoom@4bc5764e]" name="testUpdateRooms" duration-ms="9452" started-at="2015-06-19T19:15:38Z" finished-at="2015-06-19T19:15:48Z">
+        <test-method status="PASS" signature="testUpdateRooms()[pri:0, instance:org.roommanager.test.admin.confRoom.UpdateRoom@316db8d6]" name="testUpdateRooms" duration-ms="6489" started-at="2015-06-19T21:30:44Z" finished-at="2015-06-19T21:30:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testUpdateRooms -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:org.roommanager.test.admin.confRoom.UpdateRoom@4bc5764e]" name="tearDown" is-config="true" duration-ms="5724" started-at="2015-06-19T19:15:48Z" finished-at="2015-06-19T19:15:53Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:org.roommanager.test.admin.confRoom.UpdateRoom@316db8d6]" name="tearDown" is-config="true" duration-ms="5193" started-at="2015-06-19T21:30:50Z" finished-at="2015-06-19T21:30:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

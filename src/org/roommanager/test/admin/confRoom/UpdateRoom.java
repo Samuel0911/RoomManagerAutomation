@@ -1,9 +1,7 @@
 package org.roommanager.test.admin.confRoom;
 
 import org.testng.Assert;
-import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
@@ -11,6 +9,7 @@ import org.roommanager.pages.admin.confRoom.ConfRoomPage;
 import org.roommanager.pages.admin.confRoom.RoomInfoPage;
 import org.roommanager.pages.admin.login.LoginPage;
 import org.roommanager.pages.admin.mainMenu.MainMenuPage;
+import org.roommanager.utils.BrowserManager;
 import org.roommanager.utils.PropertyReader;
 
 public class UpdateRoom {
@@ -21,15 +20,15 @@ public class UpdateRoom {
 
 	@BeforeTest
 	public void setUp() throws Exception {
-		System.setProperty("webdriver.chrome.driver", "resources\\chromedriver.exe");
-		driver = new ChromeDriver();
-		driver.manage().window().maximize();
+				
+		driver = BrowserManager.browserChrome();
+		driver.get(PropertyReader.getUrl());
 	}
 	
 	@Test
 	public void testUpdateRooms() throws Exception {
 		
-		driver.get(baseUrl);	    
+		driver.get(PropertyReader.getUrl());	    
 		LoginPage login = new LoginPage(driver);	    
 		login.setUsername(PropertyReader.getUserName());	    
 		login.setPassword(PropertyReader.getPassword());	    
@@ -51,7 +50,7 @@ public class UpdateRoom {
 
 	@AfterTest
 	public void tearDown() throws Exception {
-		driver.get(baseUrl);	    
+		driver.get(PropertyReader.getUrl());	    
 		
 		LoginPage login = new LoginPage(driver);	    
 		login.setUsername(PropertyReader.getUserName());	    
@@ -66,7 +65,6 @@ public class UpdateRoom {
 		roomInfo.nameRoomOriginal();
 		
 	confRoom = roomInfo.saveButtonForm();
-		driver.quit();
 	}
 
 }

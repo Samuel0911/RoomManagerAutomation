@@ -83,7 +83,7 @@ public class RoomInfoPage {
 		return driver.findElement(assertRoomUpdating).getText();
 	}
 	
-	public String getRoomName(String roomName){
+	/*public String getRoomName(String roomName){
 		WebElement room = buscador(roomName);
 		String name = room.getText();
 		return name;
@@ -102,7 +102,7 @@ public class RoomInfoPage {
 			}
 		}
         return null;
-    }
+    }*/
 
 	
 	

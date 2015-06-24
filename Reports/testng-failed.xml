@@ -1,59 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Test Suite for Room Manager]">
-  <listeners>
-    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
-    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
-    <listener class-name="org.roommanager.utils.FailedScreenShot"/>
-  </listeners>
-  <test name="Verify that is possible create a location(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
     <classes>
-      <class name="org.roommanager.test.admin.locations.DeleteLocation">
-        <methods>
-          <include name="TearDownTest"/>
-          <include name="setUp"/>
-          <include name="setUpTest"/>
-        </methods>
-      </class> <!-- org.roommanager.test.admin.locations.DeleteLocation -->
       <class name="org.roommanager.test.admin.locations.UpdateLocation">
         <methods>
           <include name="setUpTest"/>
-        </methods>
-      </class> <!-- org.roommanager.test.admin.locations.UpdateLocation -->
-      <class name="org.roommanager.test.admin.locations.CreateLocations">
-        <methods>
-          <include name="createLocation"/>
-          <include name="setUpTest"/>
           <include name="setUp"/>
-          <include name="tearDown"/>
-          <include name="TearDownTest"/>
-        </methods>
-      </class> <!-- org.roommanager.test.admin.locations.CreateLocations -->
-    </classes>
-  </test> <!-- Verify that is possible create a location(failed) -->
-  <test name="Verify that is possible update a location(failed)">
-    <classes>
-      <class name="org.roommanager.test.admin.locations.DeleteLocation">
-        <methods>
-          <include name="TearDownTest"/>
-          <include name="setUp"/>
-          <include name="setUpTest"/>
-        </methods>
-      </class> <!-- org.roommanager.test.admin.locations.DeleteLocation -->
-      <class name="org.roommanager.test.admin.locations.UpdateLocation">
-        <methods>
-          <include name="setUpTest"/>
           <include name="updateLocation"/>
         </methods>
       </class> <!-- org.roommanager.test.admin.locations.UpdateLocation -->
-      <class name="org.roommanager.test.admin.locations.CreateLocations">
-        <methods>
-          <include name="setUpTest"/>
-          <include name="setUp"/>
-          <include name="tearDown"/>
-          <include name="TearDownTest"/>
-        </methods>
-      </class> <!-- org.roommanager.test.admin.locations.CreateLocations -->
     </classes>
-  </test> <!-- Verify that is possible update a location(failed) -->
-</suite> <!-- Failed suite [Test Suite for Room Manager] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

@@ -9,6 +9,7 @@ import org.roommanager.pages.admin.mainMenu.MainMenuPage;
 import org.roommanager.utils.BrowserManager;
 import org.roommanager.utils.PropertyReader;
 import org.testng.Assert;
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
@@ -21,19 +22,25 @@ public class UpdateLocation {
 	String nameLocation = "New Location";
 	String displayNameLocation = "Location";
 
+	@BeforeSuite
+	public void setUp() throws Exception {
 
+		driver = BrowserManager.browserChrome();
+	}
 	@BeforeTest
 	public void setUpTest(){
-		driver = BrowserManager.browserChrome();
+		
 		baseUrl = PropertyReader.getUrl();
 		driver.get(baseUrl);	    
 		LoginPage login = new LoginPage(driver);	    
 		login.setUsername(PropertyReader.getUserName());	    
 		login.setPassword(PropertyReader.getPassword());	    
 
+
 		MainMenuPage menu = login.clickSignInButton();	    
 
 		LocationsPage location = menu.LocationsHyperLink();
+
 		location.LocationLink();
 		AddLocationPage addLocation = location.AddLocation();
 		addLocation.LocationTextName(nameLocation);
@@ -53,10 +60,8 @@ public class UpdateLocation {
 		LoginPage login = new LoginPage(driver);	    
 		login.setUsername(PropertyReader.getUserName());	    
 		login.setPassword(PropertyReader.getPassword());
-		login.clickSignInButton();
 
 		MainMenuPage menu = login.clickSignInButton();	    
-
 		LocationsPage location = menu.LocationsHyperLink();
 		location.LocationLink();
 		location.SearchLocationText();
@@ -71,15 +76,14 @@ public class UpdateLocation {
 		location = addLocation.SaveLocationButton();
 
 		location.RefreshPage(); 
-		location.SearchLocationText();	
 		location.getLastLocationText();	
-		Assert.assertEquals(location.getLastLocationText(),displayNameLocation);
-
+				
+		Assert.assertEquals(location.getLastLocationText(),displayNameLocation);		
 	}
 
 	@AfterTest
-	public void TearDownTest(){
-
+	public void TearDownTest()throws Exception{
+		driver.get(baseUrl);
 		LoginPage login = new LoginPage(driver);
 
 		MainMenuPage menu = login.clickSignInButton();	    
@@ -94,6 +98,11 @@ public class UpdateLocation {
 
 		location = removeLocation
 				.removeLocationButton();
-		driver.get(baseUrl);
+		
+	}
+	
+	@AfterSuite
+	public void tearDown() {				
+		driver.quit();	    
 	}
 }

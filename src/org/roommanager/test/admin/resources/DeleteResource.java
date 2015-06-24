@@ -25,11 +25,10 @@ public class DeleteResource {
 
 		driver = BrowserManager.browserChrome();
 	}
-	
 	@BeforeTest
 	public void setUpTest(){
 		baseUrl = PropertyReader.getUrl();
-	    driver.get(baseUrl);
+		driver.get(baseUrl);
 	    		 
 		LoginPage login = new LoginPage(driver);	    
 		login.setUsername(PropertyReader.getUserName());	    
@@ -58,7 +57,7 @@ public class DeleteResource {
 		ResourcePage resource = menu.ResourcesHyperLink();
 		resource.ClickLastPage();
 		resource.clickResource(nameResource);
-		
+		System.out.println("estamos removiendo en remove location");
 		RemoveResourceFormPage rmResource = resource.RemoveButton();
 		rmResource.removeResourceButton();
 								

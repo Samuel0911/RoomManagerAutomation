@@ -29,6 +29,7 @@ public class CreateLocations {
 	@BeforeTest
 	public void setUpTest(){
 		baseUrl = PropertyReader.getUrl();
+		driver.get(PropertyReader.getUrl());
 	}	  
 
 	@Test 

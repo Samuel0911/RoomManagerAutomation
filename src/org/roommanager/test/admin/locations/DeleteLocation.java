@@ -9,7 +9,7 @@ import org.roommanager.pages.admin.mainMenu.MainMenuPage;
 import org.roommanager.utils.BrowserManager;
 import org.roommanager.utils.PropertyReader;
 import org.testng.Assert;
-import org.testng.annotations.AfterTest;
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
@@ -59,12 +59,13 @@ public class DeleteLocation {
 				
 			    location = removeLocation
 			    	.removeLocationButton();
+			    //Assert.assertTrue(false);
 			    location.RefreshPage(); 			   
 			   			    
 			    Assert.assertNotSame(location.getLastLocationText(),displayNameLocation);			    			    
 	 }
 	 
-	 @AfterTest
+	 @AfterSuite
 	 public void TearDownTest(){
 		 driver.quit();	   
 	 }

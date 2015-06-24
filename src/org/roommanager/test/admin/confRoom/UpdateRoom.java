@@ -45,7 +45,7 @@ public class UpdateRoom {
 			
 		confRoom = roomInfo.saveButtonForm();
 					
-		Assert.assertEquals(nameRoomAssert, roomInfo.getRoomName(nameRoomAssert).trim());	     
+		Assert.assertEquals(nameRoomAssert, confRoom.getRoomName(nameRoomAssert).trim());	     
 	}	
 
 	@AfterTest
@@ -57,14 +57,16 @@ public class UpdateRoom {
 		login.setPassword(PropertyReader.getPassword());	    
 
 		MainMenuPage menu = login.clickSignInButton();	    
-		
+
+				
 		ConfRoomPage rooms = menu.confRoomHyperLink();	
+		rooms.getRoomName(nameRoomAssert);
 		ConfRoomPage confRoom = rooms.confRoomHyperLink();
 		
 		RoomInfoPage roomInfo = confRoom.doubleClickRoom();
 		roomInfo.nameRoomOriginal();
-		
-	confRoom = roomInfo.saveButtonForm();
+				
+		confRoom = roomInfo.saveButtonForm();
 	}
 
 }

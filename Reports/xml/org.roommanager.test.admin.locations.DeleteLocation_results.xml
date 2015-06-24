@@ -4,10 +4,10 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="2.673">
+           time="6.845">
   <properties />
   
   
-            <testcase name="deleteLocation" time="2.673" classname="org.roommanager.test.admin.locations.DeleteLocation" />
+            <testcase name="deleteLocation" time="6.845" classname="org.roommanager.test.admin.locations.DeleteLocation" />
       
 </testsuite>

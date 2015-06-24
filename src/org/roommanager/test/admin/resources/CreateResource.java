@@ -29,17 +29,16 @@ public class CreateResource {
 	@Test
 	public void createResource(){
 
-		driver.get(baseUrl);
+		driver.get(PropertyReader.getUrl());
+		//driver.get(baseUrl);
 		LoginPage login = new LoginPage(driver);	    
 		login.setUsername(PropertyReader.getUserName());	    
 		login.setPassword(PropertyReader.getPassword());	    
 
 		MainMenuPage menu = login.clickSignInButton();	    
 
-		ResourcePage resource = menu.ResourcesHyperLink();
-		resource.ResourceLink();
+		ResourcePage resource = menu.ResourcesHyperLink();				
 		AddResourcePage addResource = resource.AddResource();
-		
 		addResource.resourceTextName(nameResource);
 		addResource.resourceTextDisplayName(displayNameResource);
 		addResource.saveResourceButton();
@@ -59,7 +58,7 @@ public class CreateResource {
 		ResourcePage resource = menu.ResourcesHyperLink();
 		resource.ClickLastPage();
 		resource.clickResource(nameResource);
-		
+		System.out.println("estamos removiendo en create location");
 		RemoveResourceFormPage rmResource = resource.RemoveButton();
 		rmResource.removeResourceButton();
 							

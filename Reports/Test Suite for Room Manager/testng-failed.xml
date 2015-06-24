@@ -6,44 +6,22 @@
     <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
     <listener class-name="org.roommanager.utils.FailedScreenShot"/>
   </listeners>
-  <test name="Verify that is possible create a location(failed)">
+  <test name="Verify that is posible delete a location(failed)">
     <classes>
       <class name="org.roommanager.test.admin.locations.DeleteLocation">
         <methods>
           <include name="TearDownTest"/>
           <include name="setUp"/>
+          <include name="deleteLocation"/>
           <include name="setUpTest"/>
         </methods>
       </class> <!-- org.roommanager.test.admin.locations.DeleteLocation -->
       <class name="org.roommanager.test.admin.locations.UpdateLocation">
         <methods>
-          <include name="setUpTest"/>
-        </methods>
-      </class> <!-- org.roommanager.test.admin.locations.UpdateLocation -->
-      <class name="org.roommanager.test.admin.locations.CreateLocations">
-        <methods>
-          <include name="createLocation"/>
           <include name="setUpTest"/>
           <include name="setUp"/>
           <include name="tearDown"/>
           <include name="TearDownTest"/>
-        </methods>
-      </class> <!-- org.roommanager.test.admin.locations.CreateLocations -->
-    </classes>
-  </test> <!-- Verify that is possible create a location(failed) -->
-  <test name="Verify that is possible update a location(failed)">
-    <classes>
-      <class name="org.roommanager.test.admin.locations.DeleteLocation">
-        <methods>
-          <include name="TearDownTest"/>
-          <include name="setUp"/>
-          <include name="setUpTest"/>
-        </methods>
-      </class> <!-- org.roommanager.test.admin.locations.DeleteLocation -->
-      <class name="org.roommanager.test.admin.locations.UpdateLocation">
-        <methods>
-          <include name="setUpTest"/>
-          <include name="updateLocation"/>
         </methods>
       </class> <!-- org.roommanager.test.admin.locations.UpdateLocation -->
       <class name="org.roommanager.test.admin.locations.CreateLocations">
@@ -55,5 +33,5 @@
         </methods>
       </class> <!-- org.roommanager.test.admin.locations.CreateLocations -->
     </classes>
-  </test> <!-- Verify that is possible update a location(failed) -->
+  </test> <!-- Verify that is posible delete a location(failed) -->
 </suite> <!-- Failed suite [Test Suite for Room Manager] -->

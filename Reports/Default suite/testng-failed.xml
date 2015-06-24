@@ -3,14 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="org.roommanager.test.admin.locations.CreateLocations">
+      <class name="org.roommanager.test.admin.locations.UpdateLocation">
         <methods>
-          <include name="createLocation"/>
           <include name="setUpTest"/>
           <include name="setUp"/>
-          <include name="TearDownTest"/>
+          <include name="updateLocation"/>
         </methods>
-      </class> <!-- org.roommanager.test.admin.locations.CreateLocations -->
+      </class> <!-- org.roommanager.test.admin.locations.UpdateLocation -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
